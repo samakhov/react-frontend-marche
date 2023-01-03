@@ -220,7 +220,7 @@ class MarcheComponent extends React.Component {
             <div>
                 <h1 className = "text-center" color='red'> Liste des Marches</h1>
                 <table className = "table table-striped">   
-                    <thead>
+                    //<thead>
                         <tr>
                             <td> Id</td>
                             <td> Nom</td>
@@ -231,8 +231,8 @@ class MarcheComponent extends React.Component {
                             <td> Actions</td>
                         </tr>
 
-                    </thead>
-                    <tbody>
+                    //</thead>
+                    //<tbody>
                         {
                             this.state.marches.map(
                                 marche =>
@@ -249,7 +249,7 @@ class MarcheComponent extends React.Component {
                             )
                             
                         }
-                    </tbody>
+                    //</tbody>
 
                 </table>
                 <Button onClick={this.ajoutermarche} id="ajoutMarche" className='button'>ajouter marché</Button>
